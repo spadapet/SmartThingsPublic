@@ -74,11 +74,13 @@ void sendMessage()
   {
     sendSms phone1, msg
   }
+  else
+  {
+    sendPush msg
+  }
   
   if (phone2)
   {
     sendSms phone2, msg
   }
-
-  sendPush msg
 }
